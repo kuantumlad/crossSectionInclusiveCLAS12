@@ -1,0 +1,16 @@
+INTEGRATION            0.000   0.001   0.001   0.001   0.000 100.000
+
+I   -  relative accuracy of integration in quasi-elastic case (using simps integral package)
+         (Note that in order to use option I, the value of II and VI should be set  0)
+II  -  relative/absolute accuracy of integration in quasi-elastic case (using gadap package)
+        Note   that for integrating  by option II we have to chose the values of I and VI to be 0
+III -  relative accuracy of integration in  inelastic case (uses gadap package)
+
+IV - the initial step of integration when using the option I
+
+V - used internally
+
+VI - integration with equal partition of the interval, by 1000*VI. 
+        (for example if one takes VI=100 one optiains 100000 partition, 
+         it makes integral rather slow but it seems also more accurate)
+
